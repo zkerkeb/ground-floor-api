@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exercises",
+  "info": {
+    "singularName": "exercise",
+    "pluralName": "exercises",
+    "displayName": "exercise",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "Strengthening",
+        "Relaxation"
+      ],
+      "default": "Strengthening"
+    },
+    "level": {
+      "type": "enumeration",
+      "enum": [
+        "level 1",
+        "level 2",
+        "level 3"
+      ],
+      "default": "level 1"
+    },
+    "instruction": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::exercice-instruction.exercice-instruction",
+      "inversedBy": "exercises"
+    },
+    "intro": {
+      "type": "text"
+    },
+    "duration": {
+      "type": "integer",
+      "default": 0
+    },
+    "choiceType": {
+      "type": "enumeration",
+      "enum": [
+        "none",
+        "breathing",
+        "stretching"
+      ],
+      "default": "none"
+    }
+  }
+}
