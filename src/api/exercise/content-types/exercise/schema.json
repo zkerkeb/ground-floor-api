@@ -53,6 +53,12 @@
         "stretching"
       ],
       "default": "none"
+    },
+    "exercice_video": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::exercice-video.exercice-video",
+      "inversedBy": "exercises"
     }
   }
 }

@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "exercice_videos",
+  "info": {
+    "singularName": "exercice-video",
+    "pluralName": "exercice-videos",
+    "displayName": "exercice video",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "exercises": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::exercise.exercise",
+      "mappedBy": "exercice_video"
+    },
+    "name": {
+      "type": "enumeration",
+      "enum": [
+        "agility",
+        "breath4-4-4",
+        "breath4-6",
+        "breath4-8",
+        "breath5-5-5",
+        "clock-full",
+        "control",
+        "endurance1",
+        "endurance2",
+        "explosivite2",
+        "knack",
+        "precision",
+        "speed"
+      ]
+    }
+  }
+}
