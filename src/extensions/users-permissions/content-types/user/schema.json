@@ -67,9 +67,14 @@
       "type": "string",
       "required": true
     },
-    "lastName": {
-      "type": "string",
-      "required": true
+    "birthday": {
+      "type": "date"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "users_permissions_users"
     }
   }
 }
