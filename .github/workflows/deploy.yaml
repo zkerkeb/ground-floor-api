@@ -18,15 +18,15 @@ jobs:
         uses: webfactory/ssh-agent@v0.5.3
         with:
           ssh-private-key: ${{ secrets.MEDIA_SSH }}
-
-      - name: Deploy update to server
+    
+      - name: Execute commands over SSH
         run: |
-          ssh hikkary@media.hikkary.com <<'ENDSSH'
+          ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null hikkary@media.hikkary.com <<'ENDSSH'
           cd /home/hikkary/projet/ground-floor-api
-          git stash
           git pull
-          yarn
-          yarn build
+          npm install
+          npm run build
           cd ~
-          pm2 restart all
+          pm2 restart strapi
           ENDSSH
+
