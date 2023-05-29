@@ -21,7 +21,7 @@ jobs:
     
       - name: Execute commands over SSH
         run: |
-          ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null hikkary@media.hikkary.com <<'ENDSSH'
+          ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=60 hikkary@media.hikkary.com <<'ENDSSH'
           cd /home/hikkary/projet/ground-floor-api
           git pull
           npm install
@@ -29,4 +29,5 @@ jobs:
           cd ~
           pm2 restart strapi
           ENDSSH
+
 
