@@ -24,8 +24,8 @@ jobs:
           ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=60 hikkary@media.hikkary.com <<'ENDSSH'
           cd /home/hikkary/projet/ground-floor-api
           git pull
-          npm install
-          npm run build
+          yarn
+          yarn build
           cd ~
           pm2 restart ecosystem.config.js
           ENDSSH
