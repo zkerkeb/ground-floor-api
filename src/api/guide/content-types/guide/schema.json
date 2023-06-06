@@ -4,7 +4,8 @@
   "info": {
     "singularName": "guide",
     "pluralName": "guides",
-    "displayName": "guide"
+    "displayName": "guide",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -12,10 +13,12 @@
   "pluginOptions": {},
   "attributes": {
     "title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "content": {
-      "type": "richtext"
+      "type": "richtext",
+      "required": true
     },
     "reading_time": {
       "type": "integer",
@@ -23,17 +26,21 @@
       "required": true
     },
     "instruction": {
-      "type": "text"
+      "type": "text",
+      "required": true
     },
     "short_title": {
-      "type": "string"
+      "type": "string",
+      "required": true
     },
     "type": {
       "type": "enumeration",
       "enum": [
         "how_to",
         "tips"
-      ]
+      ],
+      "default": "how_to",
+      "required": true
     }
   }
 }
