@@ -70,11 +70,26 @@
     "birthday": {
       "type": "date"
     },
+    "reports": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::report.report",
+      "mappedBy": "user"
+    },
+    "currentTags": {
+      "type": "json"
+    },
     "tags": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::tag.tag",
-      "inversedBy": "users_permissions_users"
+      "mappedBy": "users"
+    },
+    "subscription": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::subscription.subscription",
+      "inversedBy": "user_id"
     }
   }
 }
