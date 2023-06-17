@@ -23,6 +23,7 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=60 hikkary@media.hikkary.com <<'ENDSSH'
           cd /home/hikkary/projet/ground-floor-api
+          git stash
           git pull
           yarn
           yarn build
