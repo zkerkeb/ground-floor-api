@@ -23,6 +23,7 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=60 ubuntu@37.187.76.75 <<'ENDSSH'
           cd /home/ubuntu/projets/ground-floor-api
+          nvm use 14.19.1
           git stash
           git pull
           yarn
