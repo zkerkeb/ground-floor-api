@@ -90,6 +90,10 @@
       "relation": "oneToOne",
       "target": "api::subscription.subscription",
       "inversedBy": "user_id"
+    },
+    "newsletter": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
