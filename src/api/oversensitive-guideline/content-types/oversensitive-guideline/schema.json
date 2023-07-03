@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "oversensitive_guidelines",
+  "info": {
+    "singularName": "oversensitive-guideline",
+    "pluralName": "oversensitive-guidelines",
+    "displayName": "Oversensitive guideline"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "guide.guide-component"
+    }
+  }
+}

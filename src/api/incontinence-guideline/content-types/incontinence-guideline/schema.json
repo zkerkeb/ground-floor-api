@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "incontinence_guidelines",
+  "info": {
+    "singularName": "incontinence-guideline",
+    "pluralName": "incontinence-guidelines",
+    "displayName": "Incontinence guideline",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "guide.guide-component"
+    }
+  }
+}

@@ -59,6 +59,25 @@
       "relation": "manyToOne",
       "target": "api::exercice-video.exercice-video",
       "inversedBy": "exercises"
+    },
+    "hypertonic_warning": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "pregnant_warning": {
+      "type": "boolean",
+      "default": false
+    },
+    "pregnant_hypertonic_warning": {
+      "type": "boolean",
+      "default": false
+    },
+    "programs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::program.program",
+      "mappedBy": "exercises"
     }
   }
 }

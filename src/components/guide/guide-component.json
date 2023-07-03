@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_guide_guide_components",
+  "info": {
+    "displayName": "guideComponent",
+    "icon": "atlas"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "reading_time": {
+      "type": "integer"
+    },
+    "instruction": {
+      "type": "string"
+    },
+    "short_title": {
+      "type": "string"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "guidelines"
+      ],
+      "default": "guidelines"
+    }
+  }
+}

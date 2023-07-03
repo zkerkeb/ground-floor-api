@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "liquid_intake_guidelines",
+  "info": {
+    "singularName": "liquid-intake-guideline",
+    "pluralName": "liquid-intake-guidelines",
+    "displayName": "Liquid intake guideline"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": false,
+      "component": "guide.guide-component"
+    }
+  }
+}
