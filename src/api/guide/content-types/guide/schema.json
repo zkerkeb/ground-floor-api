@@ -45,6 +45,12 @@
     "order": {
       "type": "integer",
       "required": false
+    },
+    "exercises": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::exercise.exercise",
+      "mappedBy": "guide"
     }
   }
 }

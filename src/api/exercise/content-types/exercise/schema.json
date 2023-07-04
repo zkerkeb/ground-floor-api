@@ -78,6 +78,15 @@
       "relation": "manyToMany",
       "target": "api::program.program",
       "mappedBy": "exercises"
+    },
+    "guide": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::guide.guide",
+      "inversedBy": "exercises"
+    },
+    "guide_catchprase": {
+      "type": "string"
     }
   }
 }
