@@ -36,9 +36,10 @@
     "type": {
       "type": "enumeration",
       "enum": [
-        "guidelines"
+        "how_to",
+        "tips"
       ],
-      "default": "guidelines",
+      "default": "how_to",
       "required": true
     }
   }
