@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "stretch_lights",
+  "info": {
+    "singularName": "stretch-light",
+    "pluralName": "stretch-lights",
+    "displayName": "stretch-light"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "stretch.stretch-exercices"
+    }
+  }
+}

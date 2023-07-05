@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "stretch_intermediates",
+  "info": {
+    "singularName": "stretch-intermediate",
+    "pluralName": "stretch-intermediates",
+    "displayName": "Stretch-intermediate"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "stretch.stretch-exercices"
+    }
+  }
+}

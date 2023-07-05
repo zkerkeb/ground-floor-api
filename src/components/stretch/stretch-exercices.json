@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_stretch_stretch_exercices",
+  "info": {
+    "displayName": "stretch exercices",
+    "icon": "ambulance"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "instructions": {
+      "type": "richtext"
+    },
+    "timer": {
+      "type": "integer"
+    }
+  }
+}

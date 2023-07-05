@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "stretch_advanceds",
+  "info": {
+    "singularName": "stretch-advanced",
+    "pluralName": "stretch-advanceds",
+    "displayName": "Stretch-advanced"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "values": {
+      "type": "component",
+      "repeatable": true,
+      "component": "stretch.stretch-exercices"
+    }
+  }
+}
