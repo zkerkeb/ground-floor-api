@@ -94,6 +94,9 @@
     "newsletter": {
       "type": "boolean",
       "default": false
+    },
+    "exercices_progress": {
+      "type": "json"
     }
   }
 }
