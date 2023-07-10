@@ -51,6 +51,12 @@
       "relation": "oneToMany",
       "target": "api::exercise.exercise",
       "mappedBy": "guide"
+    },
+    "tags": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::tag.tag",
+      "inversedBy": "guides"
     }
   }
 }

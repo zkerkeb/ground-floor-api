@@ -32,6 +32,12 @@
       "relation": "manyToMany",
       "target": "api::program.program",
       "mappedBy": "tags"
+    },
+    "guides": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::guide.guide",
+      "inversedBy": "tags"
     }
   }
 }
