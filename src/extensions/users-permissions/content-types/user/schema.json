@@ -97,6 +97,10 @@
     },
     "exercices_progress": {
       "type": "json"
+    },
+    "premiumUntil": {
+      "type": "date",
+      "default": "2023-08-31"
     }
   }
 }
