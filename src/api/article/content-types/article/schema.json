@@ -65,7 +65,7 @@
           "localized": true
         }
       },
-      "type": "string"
+      "type": "text"
     },
     "tags": {
       "type": "relation",
