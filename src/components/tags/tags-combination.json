@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_tags_tags_combinations",
+  "info": {
+    "displayName": "tags_combination",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "tags": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tag.tag"
+    }
+  }
+}

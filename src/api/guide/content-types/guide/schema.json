@@ -57,6 +57,11 @@
       "relation": "manyToMany",
       "target": "api::tag.tag",
       "inversedBy": "guides"
+    },
+    "tags_combinations": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tags.tags-combination"
     }
   }
 }
