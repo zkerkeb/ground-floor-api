@@ -22,10 +22,6 @@
       "type": "enumeration",
       "enum": [
         "agility",
-        "breath4-4-4",
-        "breath4-6",
-        "breath4-8",
-        "breath5-5-5",
         "clock-full",
         "control",
         "endurance1",
@@ -33,7 +29,9 @@
         "explosivite2",
         "knack",
         "precision",
-        "speed"
+        "strength",
+        "speed",
+        "reverseKegel"
       ]
     }
   }
