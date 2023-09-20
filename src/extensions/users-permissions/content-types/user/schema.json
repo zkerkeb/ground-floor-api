@@ -104,6 +104,12 @@
     },
     "habits_progress": {
       "type": "json"
+    },
+    "tracking_records": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tracking-record.tracking-record",
+      "mappedBy": "users_permissions_user"
     }
   }
 }
