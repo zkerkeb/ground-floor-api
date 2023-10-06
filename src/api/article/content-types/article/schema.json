@@ -53,12 +53,6 @@
       },
       "type": "string"
     },
-    "article_categories": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::article-category.article-category",
-      "mappedBy": "article"
-    },
     "introduction": {
       "pluginOptions": {
         "i18n": {
@@ -102,6 +96,12 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "inversedBy": "related_articles"
+    },
+    "article_categories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::article-category.article-category",
+      "inversedBy": "articles"
     }
   }
 }

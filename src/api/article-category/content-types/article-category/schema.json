@@ -4,7 +4,8 @@
   "info": {
     "singularName": "article-category",
     "pluralName": "article-categories",
-    "displayName": "articleCategory"
+    "displayName": "articleCategory",
+    "description": ""
   },
   "options": {
     "draftAndPublish": false
@@ -14,9 +15,9 @@
     "name": {
       "type": "string"
     },
-    "article": {
+    "articles": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::article.article",
       "inversedBy": "article_categories"
     }
