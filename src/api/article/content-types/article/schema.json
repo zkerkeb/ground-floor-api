@@ -45,14 +45,6 @@
         }
       }
     },
-    "problem": {
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      },
-      "type": "string"
-    },
     "introduction": {
       "pluginOptions": {
         "i18n": {
