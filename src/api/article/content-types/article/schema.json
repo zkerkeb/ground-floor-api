@@ -94,6 +94,15 @@
       "relation": "manyToMany",
       "target": "api::article-category.article-category",
       "inversedBy": "articles"
+    },
+    "reading_time": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "integer",
+      "default": 0
     }
   }
 }
