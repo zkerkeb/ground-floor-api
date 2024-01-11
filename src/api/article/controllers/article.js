@@ -22,6 +22,9 @@ module.exports = createCoreController('api::article.article', ({ strapi }) =>  (
     ctx.query = {
       ...ctx.query,
       populate: {
+        illustration: {
+            populate: '*'
+        },
         related_articles: {
           populate: ['illustration'], // Remplacez par les champs réels que vous voulez peupler
         },
@@ -40,6 +43,9 @@ module.exports = createCoreController('api::article.article', ({ strapi }) =>  (
     ctx.query = {
       ...ctx.query,
       populate: {
+        illustration: {
+            populate: '*'
+        },
         related_articles: {
           populate: ['illustration'], // Remplacez par les champs réels que vous voulez peupler
         },
