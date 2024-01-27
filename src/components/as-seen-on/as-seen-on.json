@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_as_seen_on_as_seen_ons",
+  "info": {
+    "displayName": "as-seen-on"
+  },
+  "options": {},
+  "attributes": {
+    "illustration": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

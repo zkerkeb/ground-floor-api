@@ -1,0 +1,26 @@
+{
+  "kind": "singleType",
+  "collectionName": "web_as_seen_ons",
+  "info": {
+    "singularName": "web-as-seen-on",
+    "pluralName": "web-as-seen-ons",
+    "displayName": "web-as-seen-on"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "as_seen_on": {
+      "displayName": "as-seen-on",
+      "type": "component",
+      "repeatable": true,
+      "component": "as-seen-on.as-seen-on"
+    },
+    "isActive": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    }
+  }
+}
