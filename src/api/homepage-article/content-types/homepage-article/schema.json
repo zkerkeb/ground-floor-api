@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "homepage_articles",
+  "info": {
+    "singularName": "homepage-article",
+    "pluralName": "homepage-articles",
+    "displayName": "homepage-article"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "articles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::article.article"
+    }
+  }
+}
