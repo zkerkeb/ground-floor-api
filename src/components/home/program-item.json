@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_home_program_items",
+  "info": {
+    "displayName": "program_item",
+    "icon": "at"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "illustration": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

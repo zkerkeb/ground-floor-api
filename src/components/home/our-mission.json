@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_home_our_missions",
+  "info": {
+    "displayName": "our_mission",
+    "icon": "align-left"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "illustration": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "color": {
+      "type": "string"
+    }
+  }
+}
