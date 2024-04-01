@@ -1,0 +1,57 @@
+{
+  "kind": "singleType",
+  "collectionName": "web_content_our_missions",
+  "info": {
+    "singularName": "web-content-our-mission",
+    "pluralName": "web-content-our-missions",
+    "displayName": "web-content-our-mission",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "item": {
+      "displayName": "paragraph",
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "our-mission.paragraph"
+    },
+    "our_goals": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "home.benefits"
+    },
+    "call_to_action": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    }
+  }
+}

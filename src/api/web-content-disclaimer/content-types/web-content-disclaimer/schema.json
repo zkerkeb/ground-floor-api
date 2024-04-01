@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "web_content_disclaimers",
+  "info": {
+    "singularName": "web-content-disclaimer",
+    "pluralName": "web-content-disclaimers",
+    "displayName": "web-content-disclaimer"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext"
+    }
+  }
+}
