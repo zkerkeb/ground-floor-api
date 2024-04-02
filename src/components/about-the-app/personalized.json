@@ -2,11 +2,12 @@
   "collectionName": "components_about_the_app_personalizeds",
   "info": {
     "displayName": "personalized",
-    "icon": "arrows-alt-v"
+    "icon": "arrows-alt-v",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "titlte": {
+    "title": {
       "type": "text"
     },
     "description": {
