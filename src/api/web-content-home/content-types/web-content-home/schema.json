@@ -88,6 +88,24 @@
         }
       },
       "type": "text"
+    },
+    "slogan": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text"
+    },
+    "slogan_checkpoints": {
+      "type": "component",
+      "repeatable": true,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "home.benefits"
     }
   }
 }
