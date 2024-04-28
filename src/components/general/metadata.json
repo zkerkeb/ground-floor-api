@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_general_metadata",
+  "info": {
+    "displayName": "metadata",
+    "icon": "arrow-circle-down"
+  },
+  "options": {},
+  "attributes": {
+    "page_title": {
+      "type": "text"
+    },
+    "page_description": {
+      "type": "text"
+    },
+    "page_picture": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

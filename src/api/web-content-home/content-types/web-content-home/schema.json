@@ -106,6 +106,17 @@
         }
       },
       "component": "home.benefits"
+    },
+    "metadatas": {
+      "displayName": "metadata",
+      "type": "component",
+      "repeatable": false,
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "general.metadata"
     }
   }
 }
