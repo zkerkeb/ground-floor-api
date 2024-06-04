@@ -20,6 +20,9 @@
       "relation": "manyToMany",
       "target": "api::article.article",
       "mappedBy": "article_categories"
+    },
+    "order": {
+      "type": "integer"
     }
   }
 }
