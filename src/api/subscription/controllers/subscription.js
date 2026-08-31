@@ -18,6 +18,7 @@ module.exports = createCoreController(SUBSCRIPTION_UID, ({strapi}) => ({
     ctx.query = {
       ...ctx.query,
       filters: {
+        ...ctx.query.filters,
         user_id: {
           id: {$eq: user.id},
         },
