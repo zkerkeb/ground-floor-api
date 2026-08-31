@@ -19,16 +19,25 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.MEDIA_SSH }}
     
-      - name: Execute commands over SSH
+      - name: Upload application
+        run: |
+          rsync -az --delete \
+            --exclude '.env' \
+            --exclude '.git/' \
+            --exclude '.cache/' \
+            --exclude 'build/' \
+            --exclude 'node_modules/' \
+            --exclude 'public/uploads/' \
+            -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+            ./ hikkary@media.hikkary.com:/home/hikkary/projet/ground-floor-api/
+
+      - name: Build and restart development service
         run: |
           ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=60 hikkary@media.hikkary.com <<'ENDSSH'
+          set -e
           cd /home/hikkary/projet/ground-floor-api
-          git stash
-          git pull
-          yarn
+          yarn --frozen-lockfile
           yarn build
-          cd ~
-          pm2 restart ecosystem.config.js
+          pm2 restart "ground-floor-api" --update-env
           ENDSSH
-
 

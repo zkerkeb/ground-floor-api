@@ -18,22 +18,27 @@ jobs:
         with:
           ssh-private-key: ${{ secrets.MEDIA_SSH }}
     
-      - name: Execute commands over SSH
+      - name: Upload application
+        run: |
+          rsync -az --delete \
+            --exclude '.env' \
+            --exclude '.git/' \
+            --exclude '.cache/' \
+            --exclude 'build/' \
+            --exclude 'node_modules/' \
+            --exclude 'public/uploads/' \
+            -e "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null" \
+            ./ ubuntu@37.187.76.75:/home/ubuntu/projets/ground-floor-api/
+
+      - name: Build and restart production service
         run: |
           ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=60 ubuntu@37.187.76.75 <<'ENDSSH'
-          # Install nvm if not already installed
-          if ! type "nvm" > /dev/null; then
-            curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
-            export NVM_DIR="$HOME/.nvm"
-            [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-          fi
+          set -e
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
           cd /home/ubuntu/projets/ground-floor-api
-          nvm install 14.19.1
           nvm use 14.19.1
-          git stash
-          git pull
-          yarn
+          yarn --frozen-lockfile
           yarn build
-          cd ~
-          pm2 restart ecosystem.config.js
+          pm2 restart "ground-floor-api" --update-env
           ENDSSH
