@@ -35,9 +35,12 @@ jobs:
         run: |
           ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o ServerAliveInterval=60 hikkary@media.hikkary.com <<'ENDSSH'
           set -e
+          export NVM_DIR="$HOME/.nvm"
+          [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
           cd /home/hikkary/projet/ground-floor-api
+          nvm install 18
+          nvm use 18
           yarn --frozen-lockfile
           yarn build
           pm2 restart "ground-floor-api" --update-env
           ENDSSH
-

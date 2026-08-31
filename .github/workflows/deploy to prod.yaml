@@ -37,7 +37,8 @@ jobs:
           export NVM_DIR="$HOME/.nvm"
           [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
           cd /home/ubuntu/projets/ground-floor-api
-          nvm use 14.19.1
+          nvm install 18
+          nvm use 18
           yarn --frozen-lockfile
           yarn build
           pm2 restart "ground-floor-api" --update-env
